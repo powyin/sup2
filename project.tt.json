@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "sup2",
+  "description": "yw",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
