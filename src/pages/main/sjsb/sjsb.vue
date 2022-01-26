@@ -22,7 +22,7 @@
 
           <view class="flex_h" > 
 
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
+            <view class="flex_v "> <image class="tab_img" @click="report_event" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
             <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
             <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
             <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
@@ -104,6 +104,16 @@ export default {
       }
       return false;
     },
+
+    report_event(){
+        // Taro.navigateTo({
+        //   ""
+        // })
+
+    },
+
+
+
   },
 
   mounted() {

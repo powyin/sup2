@@ -18,32 +18,52 @@
         <image class="new_content_img"> </image>
         <view class="new_content_txt">12</view>
 
-        <view class="main_table" >
-
-          <view class="flex_h" > 
-
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
-
+        <view class="main_table">
+          <view class="flex_h">
+            <view class="flex_v">
+              <image class="tab_img" src="./line1.png" @click="report_event">
+              </image>
+              <view class="tab_txt"> 事件上报 </view>
+            </view>
+            <view class="flex_v">
+              <image class="tab_img" src="./line1.png" @click="report_event">
+              </image>
+              <view class="tab_txt"> 事件上报 </view>
+            </view>
+            <view class="flex_v">
+              <image class="tab_img" src="./line1.png" @click="report_event">
+              </image>
+              <view class="tab_txt"> 事件上报 </view>
+            </view>
+            <view class="flex_v">
+              <image class="tab_img" src="./line1.png" @click="report_event">
+              </image>
+              <view class="tab_txt"> 事件上报 </view>
+            </view>
           </view>
 
           <view class="flex_b_1"> </view>
 
-          <view class="flex_h" > 
-
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
-            <view class="flex_v "> <image class="tab_img" src = "./line1.png"> </image> <view class="tab_txt"> 事件上报 </view> </view>
-
+          <view class="flex_h">
+            <view class="flex_v">
+              <image class="tab_img" src="./line1.png"> </image>
+              <view class="tab_txt"> 事件上报 </view>
+            </view>
+            <view class="flex_v">
+              <image class="tab_img" src="./line1.png"> </image>
+              <view class="tab_txt"> 事件上报 </view>
+            </view>
+            <view class="flex_v">
+              <image class="tab_img" src="./line1.png"> </image>
+              <view class="tab_txt"> 事件上报 </view>
+            </view>
+            <view class="flex_v">
+              <image class="tab_img" src="./line1.png"> </image>
+              <view class="tab_txt"> 事件上报 </view>
+            </view>
           </view>
 
           <view class="flex_b_2"> </view>
-
-
-
         </view>
 
         <view></view>
@@ -104,6 +124,20 @@ export default {
       }
       return false;
     },
+
+    report_event() {
+      Taro.navigateTo({
+         url:  "./sjsb/sjsb"
+      })
+    },
+
+
+
+
+
+
+
+
   },
 
   mounted() {
@@ -193,7 +227,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   display: block;
   position: fixed;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   width: 100%;
   height: 100%;
 }
